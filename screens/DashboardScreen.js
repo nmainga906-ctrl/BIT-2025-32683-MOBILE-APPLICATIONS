@@ -44,7 +44,12 @@ export default function DashboardScreen({ navigation }) {
       >
         <Text style={styles.buttonText}>View Reports</Text>
       </TouchableOpacity>
-
+<TouchableOpacity
+  style={styles.button}
+  onPress={() => navigation.navigate('Attendance')}
+>
+  <Text style={styles.buttonText}>Mark Attendance</Text>
+</TouchableOpacity>
       <TouchableOpacity
         style={[styles.button, styles.logout]}
         onPress={() => navigation.replace('Login')}
